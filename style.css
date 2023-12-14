@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+/* body 
+{
+  overflow-x: hidden;
+  background: #fff;
+  min-height: 100vh;
+} */
+/* header 
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+.logo 
+{
+  color: #112434;
+  font-weight: 700;
+  font-size: 2em;
+  text-decoration: none;
+}
+.navigation 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+} */
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  z-index: 1000;
+}
+
+.logo {
+  position: absolute;
+  left: 30px; 
+  color: #112434;
+  font-weight: 700;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 40px;
+}
+
+/* Add this to keep the navigation items centered in the middle of the header */
+.navigation li {
+  list-style: none;
+}
+
+
+.navigation li 
+{
+  list-style: none;
+}
+.navigation li a 
+{
+  text-decoration: none;
+  padding: 6px 15px;
+  color: #f97b95;
+  border-radius: 20px;
+}
+.navigation li a:hover ,
+.navigation li a.active
+{
+  background: #f97b95;
+  color: #fff;
+}
+.parallax 
+{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.parallax img 
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+}
+.logo img {
+  width: 50px; /* Adjust this value to change the width of the logo */
+  height: auto; /* Maintain aspect ratio */
+  position: absolute; /* Position the logo */
+  top: 10px; /* Adjust top position */
+  left: 10px; /* Adjust left position */
+}
+
+#text 
+{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 4em;
+  color:  #f97b95
+}
+/* .sec 
+{
+  position: relative;
+  padding: 100px;
+  background:  #f97b95
+}
+.sec h2 
+{
+  font-size: 3em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.sec p 
+{
+  font-size: 1em;
+  color: #fff;
+  font-weight: 300;
+} */
+
+
+.sec {
+  position: relative;
+  padding: 100px;
+  background: #f97b95;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.sec h2 {
+  font-size: 3em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.sec p {
+  font-size: 1em;
+  color: #fff;
+  font-weight: 300;
+}
+
+.sec section {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+}
+
+.sec img {
+  max-width: 100%;
+  height: auto;
+  max-height: 300px; /* Adjust the maximum height of the images */
+}
+
+
+.biography {
+  max-width: 70%;
+  margin: 0 auto; /* This centers the .biography container */
+}
+
+.bio-entry {
+  text-align: center; /* This centers the text inside each .bio-entry */
+}
+
+.bio-entry img {
+  display: block;
+  margin: 0 auto; /* This centers the image within its container */
+}

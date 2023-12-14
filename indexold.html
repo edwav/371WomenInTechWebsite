@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Scrolling Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo"><img src="Venuslogo.png" alt="women"></a>
+      <ul class="navigation">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Sources</a></li>
+        <li><a href="#">Extra</a></li>
+      </ul>
+    </header>
+    <section class="parallax">
+      <h2 id="text"> <- Women in tech</h2>
+      <img src="tech55.png" id="te">
+      
+      <img src="women2.png" id="women">
+    </section>
+    <section class="sec">
+      <h2>Women that changed the tech world</h2>
+      <p>Discover the trailblazing women who have made significant contributions to technology.</p>
+      <!-- Biography Section -->
+      <div class="biography">
+        <!-- Ada Lovelace -->
+        <div class="bio-entry">
+          <img src="i1.png" alt="Ada Lovelace">
+          <h3>Ada Lovelace (1815-1852)</h3>
+          <h4>Time Period: Mid-19th Century</h4>
+          <h4>Famous For: First Computer Programmer</h4>
+          <p>Achievements: Ada Lovelace's most notable contribution was her work on Charles Babbage's Analytical Engine. She wrote the first algorithm intended to be processed by a machine. Lovelace's foresight into the capabilities of computers extended beyond mere number crunching; she envisioned a future where machines could create music and art, essentially predicting the field of computer programming and its applications in various creative domains.</p>
+        </div>
+        <!-- Grace Hopper -->
+        <div class="bio-entry">
+          <img src="grace_hopper.png" alt="Grace Hopper">
+          <h3>Grace Hopper (1906-1992)</h3>
+          <p>Detailed achievements here...</p>
+        </div>
+        <!-- Hedy Lamarr -->
+        <div class="bio-entry">
+          <img src="hedy_lamarr.png" alt="Hedy Lamarr">
+          <h3>Hedy Lamarr (1914-2000)</h3>
+          <p>Detailed achievements here...</p>
+        </div>
+        <!-- More biographies in the same structure... -->
+      </div>
+    </section>
+    <section class="sec">
+      <h2>Women that changed the tech world</h2>
+      <p> [...]</p>
+      <section>
+        <img src="i1.png" alt="Image 1">
+      </section>
+      <section>
+        <img src="i2.png" alt="Image 2">
+      </section>
+      <section>
+        <img src="i3.png" alt="Image 2">
+      </section>
+      <section>
+        <img src="i4.png" alt="Image 2">
+      </section>
+      <section>
+        <img src="i5.png" alt="Image 2">
+      </section>
+      <section>
+        <img src="i6.png" alt="Image 2">
+      </section>
+      <section>
+        <img src="i7.png" alt="Image 10">
+      </section>
+      <section>
+        <p> [...more images later]</p>
+      </section>
+    
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+    <script>
+      gsap.from("#te",{
+        scrollTrigger : {
+          scrub: true
+        },
+        y: 100,
+      })
+      gsap.from("#women",{
+        scrollTrigger : {
+          scrub: true
+        },
+        x: -200,
+      })
+      gsap.from("#plants",{
+        scrollTrigger : {
+          scrub: true
+        },
+        x: -50,
+      })
+      gsap.from("#text",{
+        scrollTrigger : {
+          scrub: true
+        },
+        x: 200,
+        y: -50,
+      })
+    </script>
+    
+  </body>
+</html>
